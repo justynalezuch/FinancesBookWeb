@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moje finanse | Dodaj wydatek</title>
+    <meta name="description" content="Aplikacja Moje Finanse - codzienny przegląd Twoich wydatków">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="flex addExpense">
+    <div class="container">
+        <div class="logo">
+            moje <span>finanse</span>
+        </div>
+        <form>
+            <label for="amount">Kwota:</label>
+            <input type="number" id="amount" name="amount" placeholder="Wprowadź kwotę np.12.45" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="paymentMethod">Sposób płatności:</label>
+            <select name="paymentMethod" id="paymentMethod" required>
+                <option value="">Gotówka</option>
+                <option value="">Karta debetowa</option>
+                <option value="">Karta kredytowa</option>
+            </select>
+
+            <label for="category">Kategoria:</label>
+            <select name="category" id="category" required>
+                <option value="food">Jedzenie</option>
+                <option value="flat">Mieszkanie</option>
+                <option value="transport">Transport</option>
+                <option value="telecommunications">Telekomunikacja</option>
+                <option value="healthcare">Opieka zdrowotna</option>
+                <option value="cloth">Ubranie</option>
+                <option value="hygiene">Higiena</option>
+                <option value="children">Dzieci</option>
+                <option value="entertainment">Rozrywka</option>
+                <option value="trip">Wycieczka</option>
+                <option value="training">Szkolenia</option>
+                <option value="books">Książki</option>
+                <option value="savings">Oszczędności</option>
+                <option value="for retirement">Na złotą jesień, czyli emeryturę</option>
+                <option value="debt-repayment">Spłata długów</option>
+                <option value="donation">Darowizna</option>
+                <option value="other">Inne wydatki</option>
+            </select>
+
+            <label for="comment">Komentarz</label>
+            <textarea name="comment" id="comment" rows="5" placeholder="Wprowadź komentarz (opcjonalnie)"></textarea>
+
+            <input type="submit" value="Dodaj">
+        </form>
+        <a href="" class="button">Anuluj</a>
+
+
+    </div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
