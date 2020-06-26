@@ -1,11 +1,13 @@
 body {
-  background-color: #e6e6e6;
   font-family: "Source Sans Pro", sans-serif;
+  background: url("so-white.png");
 }
-body.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media only screen and (min-width: 400px) {
+  body.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 body, html {
@@ -21,15 +23,40 @@ body, html {
 a {
   text-decoration: none;
 }
+a.button {
+  border: 1px solid #d4d4d4;
+  background-color: #fff;
+  color: #003e6b;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+a.button:hover {
+  border-color: #dd6764;
+  background-color: #dd6764;
+  color: #fff;
+}
 
-input {
-  padding: 12px;
+input, select, textarea {
+  padding: 10px;
   margin: 7px 0 17px 0;
   display: block;
   border: 1px solid #eae8e8;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 300px;
+  width: 100%;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
 }
 
 input[type=submit] {
@@ -49,6 +76,13 @@ input[type=submit]:hover {
   background-color: #f8f8f8;
   padding: 15px 30px;
   border-radius: 4px;
+  border: 1px solid #eae8e8;
+  margin: 20px;
+}
+@media only screen and (min-width: 400px) {
+  .container {
+    min-width: 350px;
+  }
 }
 
 .logo {
@@ -63,6 +97,9 @@ input[type=submit]:hover {
   color: #003E6B;
 }
 
+.menu {
+  background-color: #fff;
+}
 .menu a {
   padding: 10px;
   margin: 14px 0;
@@ -70,15 +107,23 @@ input[type=submit]:hover {
   border: 1px solid #d4d4d4;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 300px;
-  background-color: #e3ecf3;
+  width: 100%;
+  background-color: #F0F4F8;
   color: #003e6b;
-  transition: 0.3s ease-in-out;
   font-size: 14px;
   text-align: center;
 }
 .menu a:hover {
   background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+textarea {
+  resize: none;
+}
+
+select option[disabled] {
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */
