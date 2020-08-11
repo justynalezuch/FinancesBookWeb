@@ -1,3 +1,4 @@
 *.scss
 *.css.map
-.idea
+.idea/workspace.xml
+*.xml

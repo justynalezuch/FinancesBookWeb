@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moje finanse | Przeglądaj bilans</title>
+    <meta name="description" content="Aplikacja Moje Finanse - codzienny przegląd Twoich wydatków">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-balance">
+
+    <div class="logo">
+        moje <span>finanse</span>
+    </div>
+    <div class="top-bar">
+        <span>Twój finansowy bilans</span>
+        <div class="dropdown">
+            Okres:&nbsp;<strong>bieżący miesiąc</strong>
+            <div class="dropdown-content">
+                <a href="">poprzedni miesiąc</a>
+                <a href="">bieżący rok</a>
+                <a href="#" id="custom">niestandardowy</a>
+                <div id="date-range">
+                    <form action="">
+                        <label for="start-date">Data początkowa</label>
+                        <input type="date" name="start-date" id="start-date">
+                        <label for="end-date">Data końcowa</label>
+                        <input type="date" name="end-date" id="end-date">
+                        <input type="submit" value="Zatwierdź">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        
+    </div>
+
+
+
+</div>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

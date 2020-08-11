@@ -38,7 +38,11 @@ a.button {
   border-radius: 4px;
   box-sizing: border-box;
 }
-a.button:hover {
+a.button.small {
+  padding: 2px 4px;
+  width: min-content;
+}
+a.button.cancel:hover {
   border-color: #dd6764;
   background-color: #dd6764;
   color: #fff;
@@ -124,6 +128,64 @@ textarea {
 
 select option[disabled] {
   color: gray;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.top-bar span {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.dropdown:after {
+  clear: both;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  padding: 5px 10px;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 12px 32px rgba(38, 39, 41, 0.18);
+  right: 0;
+}
+.dropdown-content a {
+  padding: 8px 4px;
+  display: block;
+  text-align: right;
+  color: black;
+}
+.dropdown-content a:hover {
+  color: #829AB1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container-balance {
+  padding: 15px 30px;
+  border: 1px solid #eae8e8;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+#date-range {
+  padding: 5px;
+  display: none;
+  background-color: #F0F4F8;
+}
+#date-range input {
+  padding: 2px 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
