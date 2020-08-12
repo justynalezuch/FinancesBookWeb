@@ -229,6 +229,18 @@ select option[disabled] {
 .container-balance .content table td:nth-child(2) {
   text-align: right;
 }
+.container-balance .content .financial-balance {
+  text-align: center;
+}
+.container-balance .content .financial-balance p.summary {
+  font-size: 36px;
+}
+.container-balance .content .financial-balance p.info.success {
+  color: green;
+}
+.container-balance .content .financial-balance p.info.warning {
+  color: red;
+}
 
 #date-range {
   padding: 5px;
@@ -237,6 +249,11 @@ select option[disabled] {
 }
 #date-range input {
   padding: 2px 4px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
