@@ -18,11 +18,11 @@ $(document).ready(function () {
     $('a#custom').click(function () {
         $('#date-range').toggle();
     });
-    $('html').click(function() {
-        $('#date-range').hide();
-    });
-    $('a#custom, #date-range').click(function(e){
-        e.stopPropagation();
-    });
+    // $('html').click(function() {
+    //     $('#date-range').hide();
+    // });
+    // $('a#custom, #date-range, input[type=date]').click(function(e){
+    //     e.stopPropagation();
+    // });
 });
 
